@@ -1,2 +1,14 @@
+<h1>Seu Lunga, um dos maiores poetas nordestino</h1>
+<img src="/assets/Seu Lunga.jpeg" width="450px" height="300px"/>
 <p>Nome: {{ name | uppercase }}</p>
-<p>Data de Nascimento: {{ dataNascimento | date: "dd/MM/yyyy"}}</p>
+<p>Data de Nascimento: {{ dataNascimento | date : "dd/MM/yyyy" }}</p>
+<button (click)="mostrarDataNascimento()">Mostrar Data de Nascimento</button>
+<p>Data de Falecimento: {{ dataFalecimento | date : "dd-MM-yyyy" }}</p>
+<button (click)="mostrarDataFalecimento()">Mostrar Data de Falecimento</button>
+
+<p>Quem foi {{ name }}?</p>
+<hr />
+<p>
+  Joaquim dos Santos Rodrigues, mais conhecido como Seu Lunga, foi um poeta
+  brasileiro, repentista e vendedor de sucata residente em Juazeiro do Norte.
+</p>

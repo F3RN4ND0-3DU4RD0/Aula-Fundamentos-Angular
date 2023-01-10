@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./segundo-componente.component.css']
 })
 export class SegundoComponenteComponent {
-name:string = "Fernando";
-dataNascimento:string = "2002-06-25";
+name:string = "Seu Lunga";
+dataNascimento:string = "1927-08-18";
+dataFalecimento: string = "2014-11-22"
+
+mostrarDataNascimento(){
+  alert(`A data de nascimento é ${this.dataNascimento}`);
+}
+
+mostrarDataFalecimento(){
+  alert(`A data de falecimento é ${this.dataFalecimento}`);
+}
 }
